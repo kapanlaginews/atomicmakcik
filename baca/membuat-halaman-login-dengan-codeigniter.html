@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="https://1.bp.blogspot.com/-q1hXV76r2pE/YJKe2l9-01I/AAAAAAAAAE8/dqKbm4_8s64-17G5vlywo8hbvkJBLV--QCNcBGAsYHQ/s32/idea.ico">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vyantagc/vyantagc/popme-style.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+	<script  src="https://pasukan.my.id/ad/head.js" type="text/javascript" ></script>
+	<title>
+        ▷ Membuat Halaman Login Dengan Codeigniter
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#dc3545;--color-accent:#dc354515;--color-bg:#fff;--color-bg-secondary:#c82333;--color-secondary:#c82333;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#ffffff;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #c82333}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Admin"
+  },
+  "headline": "Membuat Halaman Login Dengan Codeigniter",
+  "datePublished": "2021-08-12",
+  "image": "https://www.haysia.com/assets/upload/image/codeigniter/index.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "atomicmakcik",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=membuat+halaman+login+dengan+codeigniter",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{ "@context": "https://schema.org/", 
+"@type": "CreativeWorkSeries", 
+"name": "atomicmakcik", "aggregateRating": 
+{ "@type": "AggregateRating", 
+"ratingValue": "4.5", 
+"bestRating": "5", 
+"ratingCount": "158" } }
+</script>
+	<!-- Head tag Code -->
+</script><script type='text/javascript' src='//inquiryclank.com/9e/2b/a7/9e2ba7859749ffcbe541725d70fa9e2d.js'></script>
+
+<script  src="https://pasukan.my.id/go/back_indo.js" type="text/javascript" ></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GWR1H8SP53"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GWR1H8SP53');
+</script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            ▷ Membuat Halaman Login Dengan Codeigniter
+            </a>
+        </h1>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Cari disini...' type='text' name="q" required autocomplete="off" id="search-query">
+            <script  src="https://pasukan.my.id/ad/header.js" type="text/javascript" ></script>        </center>
+    </header>
+    <main>
+        <article>
+    <p><a href="/">membuat halaman login dengan codeigniter</a> - Selamat mendarat di website awak. engkau mampu menelusuri tulisan yang sesuai bersama kehendak engkau lantaran aku mempunyai berita yg lantas update dengan ditulis beserta jalan bahasa yg santai dan gampang dipahami seluruh diri. batang air ini admin hendak membicarakan artikel hampiran membuat halaman login dengan codeigniter.
+		
+		<center>
+<script  src="https://pasukan.my.id/ad/middle.js" type="text/javascript" ></script>
+</center>		
+    <p>Sebelum memulai mari kita lihat apa yang akan kita pelajari. Proses login bisa dilakukan apabila user sudah melakukan register. Dan pada tutorial codeigniter ini kita akan belajar cara membuat sistem login dengan. Membuat Halaman Admin Dashboard Codeigniter. Hal terakhir dalam membuat halaman login codeigniter adalah mengganti routes kamu yaitu masuk ke applicationconfigroutesphp.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://caraharian.com/wp-content/uploads/2020/08/login-codeigniter-3.jpg" alt="Cara Membuat Form Login Dengan Codeigniter Dan Bootstrap" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfWKlSxilgH4Hd4aqxUKAhfMlZAZH2WDaedBzpecAWRW3e2ti88BEL6msRt65qZNMM_0k';">
+        <figcaption>Cara Membuat Form Login Dengan Codeigniter Dan Bootstrap from caraharian.com</figcaption>
+    </figure>
+        <p>
+							<a href="/baca/ceramah-habib-bahar-terbaru.html">ceramah habib bahar terbaru</a> Sebelum memulai mari kita lihat apa yang akan kita pelajari. Post kali ini membahas mengenai bagaimana membuat halaman form login. Membuat Halaman Login Web Admin Tutorial CodeIgniter 4 Part 2 Karna Tutorial kali ini membuat halaman login maka kita membutuhkan data user di database. Pada tutorial ini Anda akan belajar bagaimana membuat Login dan Register menggunakan CodeIgniter 4. Selamat datang di warung belajar dalam tutorial kali ini saya akan meneruskan pembahasan terkait tutorial codeigniter 4 pada part 10 kita akan membahas cara membuat Halaman Login dan Register dengan Codeigniter 4. Agar admin dapat menjalankan itu semua dibutuhkan sebuah manajemen sistem yaitu halaman admin.
+							</p>
+		
+		<center>
+<script  src="https://pasukan.my.id/ad/middlev2.js" type="text/javascript" ></script>
+</center>		
+    <h2>membuat halaman login dengan codeigniter</h2>
+    <p>
+							<a href="/baca/harga-tumpeng-nasi-kuning-untuk-10-orang.html">harga tumpeng nasi kuning untuk 10 orang</a> Scroll ke bagian paling bawah dan ganti dengan syntax dibawah ini routedefault_controller login. Tambahkan tabel dengan struktur seperti dibawah. Selamat datang di warung belajar dalam tutorial kali ini saya akan meneruskan pembahasan terkait tutorial codeigniter 4 pada part 10 kita akan membahas cara membuat Halaman Login dan Register dengan Codeigniter 4. Pada tutorial CodeIgniter 4 sebelumnya kita telah membahas tentang CRUD di CodeIgniter 4 di edisi tutorial kali ini kita akan mencoba membuat aplikasi sederhana CodeIgniter 4 yang menerapkan fitur authentication seperti login dan registerSebetulnya ini adalah eksperimen yang saya coba ketika CodeIgniter 4 resmi di rilis bulan Februari lalu. Website seringkali digunakan dalam digital marketing untuk memberi akses pada admin-admin. Scroll ke bagian paling bawah dan ganti dengan syntax dibawah ini routedefault_controller login. membuat halaman login dengan codeigniter.
+							</p>
+	<h3>Kita akan memberi Anda informasi rinci tentang semua metode saat kita melangkah lebih jauh dalam tutorial ini.</h3>
+    <p>
+							<a href="/baca/gaya-putri-indonesia017-bunga-jelitha-ibrani.html">gaya putri indonesia017 bunga jelitha ibrani</a> Baiklah kita langsung saja masuk ke tutorial. Hal terakhir dalam membuat halaman login codeigniter adalah mengganti routes kamu yaitu masuk ke applicationconfigroutesphp. Membuat Login Dengan Codeigniter. Membuat Login Dengan Codeigniter Assalamualaikum. Post kali ini membahas mengenai bagaimana membuat halaman form login. membuat halaman login dengan codeigniter.
+							</p>
+	<h3>Membuat Login Dengan Codeigniter Assalamualaikum.</h3>
+    <p>
+							<a href="/baca/windows-10-skin-pack-for-windows-7-32-bit.html">windows 10 skin pack for windows 7 32 bit</a> Pada tutorial CodeIgniter 4 sebelumnya kita telah membahas tentang CRUD di CodeIgniter 4 di edisi tutorial kali ini kita akan mencoba membuat aplikasi sederhana CodeIgniter 4 yang menerapkan fitur authentication seperti login dan registerSebetulnya ini adalah eksperimen yang saya coba ketika CodeIgniter 4 resmi di rilis bulan Februari lalu. Tidak hanya itu Saya juga akan berbagi kepada Anda bagaimana penggunaan filter untuk mengontrol hak akses pada route sehingga aplikasi yang akan di bangun menjadi lebih aman tanpa menulis banyak baris kode. Cara Membuat Form Login dengan CodeIgniter. Hai dalam tutorial kali ini kita akan membuat fitur login dengan Framework CodeIgniter. Proses login bisa dilakukan apabila user sudah melakukan register. membuat halaman login dengan codeigniter.
+							</p>
+		
+<p>Terima kasih sudah pernah berkunjung pada website kami. biar tulisan yg beta periksa diatas memberikan manfaat jatah pembaca bersama melimpah diri yang sudah berkunjung pada website ini. aku pamrih dorongan pada, seluruh golongan bagi peluasan website ini supaya lebih apik beserta.</p>
+
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tutorial Codeigniter Part 23 Membuat Fitur Register Login Dan Logout Di Codeigniter Warung Belajar" src="https://www.warungbelajar.com/wp-content/uploads/2019/09/Menampilkan-data-dari-model-controller-dan-ditampilkan-di-view.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyZLqgkRdq7-ZBoABT815r2byxd_NL_p-rFw';" />
+        <small>Source: www.warungbelajar.com</small>
+                    <p>Dan pada tutorial codeigniter ini kita akan belajar cara membuat sistem login dengan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Membuat Login Remember Me Codeigniter Harviacode" src="https://harviacode.com/wp-content/uploads/2016/11/remembermex.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhNiM9Z9MI5ShW-TU7ihmgkew2LD7zXUiruw';" />
+        <small>Source: harviacode.com</small>
+                    <p>Membuat halaman login halaman pendaftaran dan halaman admin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Membuat Halaman Login Web Codeigniter 3 Blog Tekno Unisbank" src="https://i0.wp.com/tekno.blog.unisbank.ac.id/wp-content/uploads/2020/11/login_1_1.jpg?fit=645%2C724&amp;ssl=1" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi5dIb-9gYEl1RD1W36vtCXz9Rl3OSK95kzA';" />
+        <small>Source: tekno.blog.unisbank.ac.id</small>
+                    <p>Pada tutorial CodeIgniter 4 sebelumnya kita telah membahas tentang CRUD di CodeIgniter 4 di edisi tutorial kali ini kita akan mencoba membuat aplikasi sederhana CodeIgniter 4 yang menerapkan fitur authentication seperti login dan registerSebetulnya ini adalah eksperimen yang saya coba ketika CodeIgniter 4 resmi di rilis bulan Februari lalu.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Form Login Dengan Codeigniter Dan Bootstrap" src="https://caraharian.com/wp-content/uploads/2020/08/login-codeigniter-13.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLjVEmR1Uw3XnPhbfibxD-4Mdg97USaw9eGvahPSkVyViQRA8J53fpX88vcl2ugVai9gs';" />
+        <small>Source: caraharian.com</small>
+                    <p>Scroll ke bagian paling bawah dan ganti dengan syntax dibawah ini routedefault_controller login.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tutorial Codeigniter 3 Select Sum Count With Mysql 27 Youtube" src="https://i.ytimg.com/vi/R5Ton6UkEW4/sddefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-mHqkcjULzSCj1jbBLu61p9O68uAZIRirOZI19rgKzDUp8cn9Om6cuXaM-flcfrnQeYM';" />
+        <small>Source: www.youtube.com</small>
+                    <p>Login multi user atau akses banyak pengguna memungkinkan user untuk dapat melakukan login dalam 1 form login pada suatu website yang kemudian tiap user akan diarahkan ke halaman dashboard masing-masing.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cara Membuat Halaman Login Di Codeigniter Dengan Mudah Ayo Ngoding" src="https://www.ayongoding.net/cara-membuat-halaman-login-di-codeigniter-dengan-mudah/cara-membuat-halaman-login-di-codeigniter-dengan-mudah/" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvK7_5EOQRjkcpZeIHim3rGfexE4r_zeqtLg';" />
+        <small>Source: www.ayongoding.net</small>
+                    <p>Berikut cara membuat login multi-user dengan Codeigniter.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Code Igniter Tutorial Php Oop Php" src="https://i.pinimg.com/originals/80/a5/96/80a596edf0bf97b5579726b30b421da4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxK41NErBfHC0HwMr_CsKowwohWv56vQVpJw';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Baik penjelasannya kita mulai dari controller Login perhatikan method index Line 12 yang load file dengan nama vw_login dimana file vw_login ini berisi form login.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="User Registration And Login System In Codeigniter 3 Webslesson" src="https://lh4.googleusercontent.com/proxy/1ONOecCctP2N174zclYdkb6cc7Pl5u_wg7PX9eGtxLk1-qwmfhr-c6Jr42OGhSD9fBEJQGl6aCQ1lln1=w1200-h630-n-k-no-nu" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSYmq4ZUwDPuEx3n-fnHiiPHgxqJpLfvnyuYvreZ6oCH_Y9rCIHk7eNAP1Z3S3xQHtJMw';" />
+        <small>Source: www.webslesson.info</small>
+                    <p>Membuat halaman login halaman pendaftaran dan halaman admin.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tutorial Codeigniter 3 Membuat Halaman Login Bagian 4 Login Logout Dan Proteksi Halaman Blog Java Web Media" src="http://javawebmedia.com/blog/wp-content/uploads/2015/08/javawebmedia.com_016_08082015_055257.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS78U4hNVukT82_pBLP5bM4Ta_xqiry3USSVtjedbhAfeiZ33PSD3UdeNYLIKAxotZ3CDA';" />
+        <small>Source: javawebmedia.com</small>
+                    <p>Post kali ini membahas mengenai bagaimana membuat halaman form login.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tutorial Membuat Middleware Dengan Filters Di Codeigniter 4 Ilmu Coding" src="https://ilmucoding.com/wp-content/uploads/2020/06/Tutorial-Lengkap-Cara-Membuat-Middleware-dengan-Filters-dengan-Codeigniter-4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3MGmVGpj1bk_7dE3CZ1LQrM-Wb3tm93n3gQ';" />
+        <small>Source: ilmucoding.com</small>
+                    <p>Buat sebuah controller dengan nama loginphp yang akan menampilkan form login dan melakukan verifikasiauthentikasi username dan password admin yang dimasukkan dan juga fungsi logout.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Webdeveloperid Aplikasi Elang" src="https://i.pinimg.com/564x/34/fd/48/34fd48eb06639f544e37c7a0a3983313.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCvy7gkBTS2Rwe5bgjzo11_KQR7eU_DfDxTg';" />
+        <small>Source: fi.pinterest.com</small>
+                    <p>Kita akan memberi Anda informasi rinci tentang semua metode saat kita melangkah lebih jauh dalam tutorial ini.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tutorial Crud Codeigniter 4 Dengan Firebase Dan Bootstrap Ilmu Coding" src="https://ilmucoding.com/wp-content/uploads/2020/08/Tutorial-Lengkap-CRUD-Codeigniter-4-CI4-dengan-Firebase-dan-Bootstrap.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS773yJFyN_WOGIbEoeNRRKyyQrZ_cPdbIaDg';" />
+        <small>Source: ilmucoding.com</small>
+                    <p>Selamat datang di warung belajar dalam tutorial kali ini saya akan meneruskan pembahasan terkait tutorial codeigniter 4 pada part 10 kita akan membahas cara membuat Halaman Login dan Register dengan Codeigniter 4.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/baca/hukum-tajwid-surat-al-baqarah-ayat-30.html"><i>&larr; hukum tajwid surat al baqarah ayat 30</i></a>
+                                                                    
+                                        <a href="/baca/hymn-for-the-weekend-mp3.html"><i>hymn for the weekend mp3 &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<center>
+<script  src="https://pasukan.my.id/ad/footer.js" type="text/javascript" ></script>
+</center>		</center>
+    </main>
+    <footer style="padding-top: 1px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type='text/javascript' src='//inquiryclank.com/a4/6a/e6/a46ae66cc05a3cf9702a5a5b3a0acf74.js'></script>
+
+<script  src="https://pasukan.my.id/ad/popme_indo.js" type="text/javascript" ></script>
+            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+	<script  src="https://cdn.jsdelivr.net/gh/vyantagc/vyantagc/popme-double-ads4.js" ></script>
+	<script  src="https://pasukan.my.id/ad/body.js" type="text/javascript" ></script>
+	
+</body>
+
+</html>
